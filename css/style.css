@@ -1,0 +1,293 @@
+/* Estilos Globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Animación */
+.hladan:hover {
+    animation: chicle 1s 1;
+}
+
+@keyframes chicle {
+    30% {
+        transform: scaleX(1.2) scaleY(0.7);
+    }
+}
+
+/* Navegación */
+.nav-link {
+    color: #333;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+    width: 100%;
+    max-width: 200px;  /* Asegura que la imagen no exceda los 200px */
+    height: auto;
+}
+
+/* Carrusel */
+.carousel-inner {
+    height: 380px;
+}
+
+.carousel-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Títulos y textos */
+.servicios-title, .sistemas-title, .obras-title, .clientes-title, .container-contactanos h2 {
+    color: #AAAAAA;
+    text-align: center;
+    font-family: "Josefin Sans", Sans-serif;
+    font-size: 2.5rem;
+    line-height: 1em;
+    letter-spacing: 3.5px;
+    margin-top: 25px;
+    padding: 2rem;
+}
+
+/* Títulos específicos */
+.servicio-title {
+    font-weight: bold;
+    color: #47BFB0;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Parrafos */
+.parrafo1, .parrafo2 {
+    text-align: center;
+    font-size: 1rem;  /* Unidades relativas */
+    padding: 0.25rem;
+}
+
+/* Sección Nosotros */
+.container-nosotros {
+    background-color: #f8f9fa;
+    padding: 1rem;
+}
+
+/* Sección Sistemas */
+.container-sistemas {
+    background-color: #f8f9fa;
+    padding: 2rem;
+}
+
+.imagen-sistemas {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.imagen-sistemas img {
+    max-width: 48%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Sección Obras */
+.container-obras {
+    background-color: #f8f9fa;
+    padding: 2rem;
+}
+
+.nav-obras .nav {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+.nav-obras .nav-link {
+    color: #333;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-obras .nav-link:hover {
+    color: #007bff;
+}
+
+/* Sección Clientes */
+.container-clientes {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.clientes-title {
+    color: #AAAAAA;
+    text-align: center;
+    font-family: "Josefin Sans", Sans-serif;
+    font-size: 2.5rem;
+    line-height: 1em;
+    letter-spacing: 3.5px;
+    padding: 2rem;
+}
+
+.logos-clientes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);  /* 5 logos en pantallas grandes */
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+    background-color: rgba(101, 98, 98, 0.492);
+    border-radius: 15px;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.logo:hover {
+    box-shadow: 0 6px 10px rgb(68, 68, 68);
+}
+
+/* Sección Novedades */
+.container-novedades {
+    max-width: 250px;
+    text-align: center;
+}
+
+.container-novedades img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Sección Contactanos */
+.container-contactanos {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-top: 2rem;
+}
+
+.container-contactanos h2 {
+    color: #AAAAAA;
+    text-align: center;
+    font-family: "Josefin Sans", Sans-serif;
+    font-size: 2.5rem;
+    line-height: 1em;
+    letter-spacing: 3.5px;
+}
+
+.info-contacto {
+    display: flex;
+    flex-direction: column;
+    line-height: 0.3;
+    padding: 1rem;
+    color: #555;
+    text-align: right;
+    font-family: "Josefin Sans", Sans-serif;
+}
+
+.container-ubicacion {
+    margin-top: 2rem; 
+    padding: 1rem;
+    text-align: center;
+}
+
+.container-ubicacion iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/*********************** FOOTER ************************/
+.footer {
+    background-color: #333;
+    padding: 1rem;
+    color: white;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-align: center;
+}
+
+/* ************** MEDIA QUERIES ************** */
+
+
+@media (max-width: 768px) {
+    
+    .carousel-inner {
+        height: 250px; 
+    }
+
+    
+    .servicios-title, .sistemas-title, .obras-title, .clientes-title {
+        font-size: 2rem;  
+    }
+
+    
+    .logos-clientes {
+        grid-template-columns: repeat(3, 1fr); /* 3 logos por fila en celulares */
+    }
+
+    
+    .imagen-sistemas img {
+        max-width: 100%;  
+    }
+
+    
+    .nav-obras .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .container-novedades {
+        max-width: 100%;
+    }
+
+    
+    .container-contactanos iframe {
+        height: 300px; 
+    }
+
+    
+    .container-ubicacion iframe {
+        height: 300px; 
+    }
+}
+
+/* Ajustes adicionales para pantallas aún más pequeñas (móviles) */
+@media (max-width: 480px) {
+    .navbar-brand img {
+        max-width: 150px; 
+    }
+.info-contacto {
+    padding: 0;
+    font-size: 0.75rem;
+}
+    .footer {
+        text-align: center;
+        justify-content: center;
+    }
+}
