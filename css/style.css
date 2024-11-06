@@ -1,4 +1,3 @@
-/* Estilos Globales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,7 +5,6 @@ body {
     background-color: #f8f9fa;
 }
 
-/* Animación */
 .hladan:hover {
     animation: chicle 1s 1;
 }
@@ -17,7 +15,6 @@ body {
     }
 }
 
-/* Navegación */
 .nav-link {
     color: #333;
     font-size: 1rem;
@@ -30,11 +27,10 @@ body {
 .navbar-brand img {
     margin-right: 10px;
     width: 100%;
-    max-width: 200px;  /* Asegura que la imagen no exceda los 200px */
+    max-width: 400px;  /* Asegura que la imagen no exceda los 200px */
     height: auto;
 }
 
-/* Carrusel */
 .carousel-inner {
     height: 380px;
 }
@@ -45,7 +41,6 @@ body {
     object-fit: cover;
 }
 
-/* Títulos y textos */
 .servicios-title, .sistemas-title, .obras-title, .clientes-title, .container-contactanos h2 {
     color: #AAAAAA;
     text-align: center;
@@ -57,7 +52,6 @@ body {
     padding: 2rem;
 }
 
-/* Títulos específicos */
 .servicio-title {
     font-weight: bold;
     color: #47BFB0;
@@ -67,20 +61,17 @@ body {
     padding: 2rem;
 }
 
-/* Parrafos */
 .parrafo1, .parrafo2 {
     text-align: center;
     font-size: 1rem;  /* Unidades relativas */
     padding: 0.25rem;
 }
 
-/* Sección Nosotros */
 .container-nosotros {
     background-color: #f8f9fa;
     padding: 1rem;
 }
 
-/* Sección Sistemas */
 .container-sistemas {
     background-color: #f8f9fa;
     padding: 2rem;
@@ -98,8 +89,6 @@ body {
     height: auto;
     border-radius: 8px;
 }
-
-/* Sección Obras */
 .container-obras {
     background-color: #f8f9fa;
     padding: 2rem;
@@ -126,7 +115,6 @@ body {
     color: #007bff;
 }
 
-/* Sección Clientes */
 .container-clientes {
     background-color: #f8f9fa;
     padding: 2rem;
@@ -165,7 +153,6 @@ body {
     box-shadow: 0 6px 10px rgb(68, 68, 68);
 }
 
-/* Sección Novedades */
 .container-novedades {
     max-width: 250px;
     text-align: center;
@@ -177,7 +164,6 @@ body {
     border-radius: 8px;
 }
 
-/* Sección Contactanos */
 .container-contactanos {
     background-color: #f8f9fa;
     padding: 2rem;
@@ -277,7 +263,6 @@ body {
     }
 }
 
-/* Ajustes adicionales para pantallas aún más pequeñas (móviles) */
 @media (max-width: 480px) {
     .navbar-brand img {
         max-width: 150px; 
